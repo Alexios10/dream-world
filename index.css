@@ -1,0 +1,104 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.bg-video {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content-container {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-title {
+  font-size: xxx-large;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#000203, #020809);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  animation: glow 3s ease-in-out infinite; /* Apply the animation */
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #5105f4, 0 0 20px #51c9e0, 0 0 30px #0e4a4b;
+  }
+  30% {
+    text-shadow: 0 0 20px #0d00ff, 0 0 30px #51c9e0, 0 0 40px #0e4a4b;
+    color: #aececb;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #0d00ff, 0 0 30px #51c9e0, 0 0 40px #0e4a4b;
+    color: #aececb;
+  }
+  70% {
+    text-shadow: 0 0 20px #0d00ff, 0 0 30px #51c9e0, 0 0 40px #0e4a4b;
+    color: #aececb;
+  }
+  100% {
+    text-shadow: 0 0 10px #5105f4, 0 0 20px #51c9e0, 0 0 30px #0e4a4b;
+  }
+}
+
+.enter-btn {
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  color: #a1b4e2;
+  position: relative;
+}
+
+.enter-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid transparent;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  transform: scaleY(-1.03);
+}
+
+.enter-btn:hover::before {
+  border-color: #7abaff;
+  transform: scale(1.03);
+}
+
+.enter-btn:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.03);
+  color: #ffffff;
+}
