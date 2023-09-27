@@ -4,13 +4,36 @@ body {
   transition: all 3s ease-in-out;
 }
 
-.title {
+.content-container {
+  height: 95vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 98vh;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
   font-size: xx-large;
   color: #7e9add;
+}
+
+.home-btn {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #7e9add;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-btn:hover {
+  background-color: #7e9add;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .bg {
