@@ -2,10 +2,119 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   transition: all 3s ease-in-out;
+  position: relative;
+}
+
+.planet1-container {
+  position: relative;
+  width: 8rem;
+  margin-top: 10rem;
+  margin-left: 55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.planet1-container:hover .worrior1 {
+  transform: translate(660%, -400%);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.worrior1 {
+  position: absolute;
+  bottom: -18.6rem;
+  right: 350%;
+  transform: translateX(450%);
+  width: 5rem;
+  height: 5rem;
+  background: url(assets/worrior1.png) no-repeat center center / contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.planet1-name {
+  color: #7e9add;
+}
+
+.planet-1 {
+  width: 8rem;
+  animation: rotatePlanet 24s linear infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+.planet-1:hover {
+  box-shadow: 0 0 5px 5px red;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes rotatePlanet {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.planet2-container {
+  position: relative;
+  width: 5rem;
+  margin-left: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.planet2-container:hover .worrior2 {
+  transform: translate(-90%, -150%);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.worrior2 {
+  position: absolute;
+  bottom: -10rem;
+  /* left: 180%; */
+  transform: translateX(400%);
+  width: 5rem;
+  height: 5rem;
+  background: url(assets/worrior2.png) no-repeat center center / contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.planet2-name {
+  color: #7e9add;
+}
+
+.planet-2 {
+  width: 5rem;
+  animation: rotatePlanet 24s linear infinite;
+  transition: all 0.3s ease-in-out;
+}
+@keyframes rotatePlanet {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.planet-2:hover {
+  box-shadow: 0 0 5px 5px rgb(163, 100, 190);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
 
 .content-container {
-  height: 95vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,20 +123,14 @@ body {
 }
 
 .title {
+  text-transform: uppercase;
   margin-bottom: 20px;
   font-size: xx-large;
   color: #7e9add;
 }
 
-.home-btn {
-  padding: 10px;
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 50px;
-  text-decoration: none;
-  color: #7e9add;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+.worrior-img {
+  width: 10rem;
 }
 
 .home-btn:hover {
