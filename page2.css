@@ -31,6 +31,7 @@ body {
   height: 5rem;
   background: url(assets/worrior1.png) no-repeat center center / contain;
   transition: transform 0.3s ease-in-out;
+  z-index: -3;
 }
 
 .planet1-name {
@@ -79,12 +80,12 @@ body {
 .worrior2 {
   position: absolute;
   bottom: -10rem;
-  /* left: 180%; */
   transform: translateX(400%);
   width: 5rem;
   height: 5rem;
   background: url(assets/worrior2.png) no-repeat center center / contain;
   transition: transform 0.3s ease-in-out;
+  z-index: -3;
 }
 
 .planet2-name {
