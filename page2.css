@@ -34,8 +34,18 @@ body {
   z-index: -3;
 }
 
-.planet1-name {
+.planet1-name,
+.planet2-name,
+.planet3-name {
   color: #7e9add;
+}
+
+.planet1,
+.planet2,
+.planet3 {
+  animation: rotatePlanet 24s linear infinite;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
 }
 
 .planet-1 {
@@ -46,7 +56,7 @@ body {
 }
 
 .planet-1:hover {
-  box-shadow: 0 0 10px 10px red;
+  box-shadow: 0 0 10px 10px rgb(63, 172, 255);
   background: transparent;
   border: none;
   border-radius: 50%;
@@ -89,27 +99,15 @@ body {
   z-index: -3;
 }
 
-.planet2-name {
-  color: #7e9add;
-}
-
 .planet-2 {
   width: 5rem;
   animation: rotatePlanet 24s linear infinite;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
 }
-@keyframes rotatePlanet {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 .planet-2:hover {
-  box-shadow: 0 0 10px 10px rgb(163, 100, 190);
+  box-shadow: 0 0 10px 10px rgb(166, 153, 171);
   background: transparent;
   border: none;
   border-radius: 50%;
@@ -140,10 +138,6 @@ body {
   border: none;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-}
-
-.planet3-name {
-  color: #7e9add;
 }
 
 .planet3-container:hover .worrior3 {
