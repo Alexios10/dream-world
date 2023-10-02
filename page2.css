@@ -2,7 +2,12 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   transition: all 3s ease-in-out;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50rem;
+  margin-top: -9rem;
 }
 
 .planet1-container {
@@ -11,22 +16,19 @@ body {
   margin-top: 10rem;
   margin-left: 55rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .planet1-container:hover .worrior1 {
-  transform: translate(670%, -400%);
+  transform: translate(135%, -460%);
   transition: transform 0.3s ease-in-out;
   z-index: -1;
 }
 
 .worrior1 {
   position: absolute;
-  bottom: -18.6rem;
-  right: 350%;
-  transform: translateX(450%);
+  top: 28.5rem;
   width: 5rem;
   height: 5rem;
   background: url(assets/worrior1.png) no-repeat center center / contain;
@@ -36,13 +38,14 @@ body {
 
 .planet1-name,
 .planet2-name,
-.planet3-name {
+.planet3-name,
+.title {
   color: #7e9add;
 }
 
-.planet1,
-.planet2,
-.planet3 {
+.planet-1,
+.planet-2,
+.planet-3 {
   animation: rotatePlanet 24s linear infinite;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
@@ -50,17 +53,10 @@ body {
 
 .planet-1 {
   width: 8rem;
-  animation: rotatePlanet 24s linear infinite;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50%;
 }
 
 .planet-1:hover {
   box-shadow: 0 0 10px 10px rgb(63, 172, 255);
-  background: transparent;
-  border: none;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
 }
 
 @keyframes rotatePlanet {
@@ -75,15 +71,14 @@ body {
 .planet2-container {
   position: relative;
   width: 5rem;
-  margin-left: 25rem;
+  margin-left: 10rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .planet2-container:hover .worrior2 {
-  transform: translate(-90%, -150%);
+  transform: translate(-412%, -200%);
   transition: transform 0.3s ease-in-out;
   z-index: -1;
 }
@@ -91,7 +86,7 @@ body {
 .worrior2 {
   position: absolute;
   bottom: -10rem;
-  transform: translateX(400%);
+  left: 14.5rem;
   width: 5rem;
   height: 5rem;
   background: url(assets/worrior2.png) no-repeat center center / contain;
@@ -100,27 +95,19 @@ body {
 }
 
 .planet-2 {
-  width: 5rem;
-  animation: rotatePlanet 24s linear infinite;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50%;
+  width: 8rem;
 }
 
 .planet-2:hover {
   box-shadow: 0 0 10px 10px rgb(166, 153, 171);
-  background: transparent;
-  border: none;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
 }
 
 .planet3-container {
   position: relative;
   width: 5rem;
   margin-top: -20rem;
-  margin-left: 88rem;
+  margin-left: 100rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -134,22 +121,18 @@ body {
 
 .planet-3:hover {
   box-shadow: 0 0 15px 15px rgb(33, 35, 155);
-  background: transparent;
-  border: none;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
 }
 
 .planet3-container:hover .worrior3 {
-  transform: translate(-130%, -380%);
+  transform: translate(170%, -380%);
   transition: transform 0.3s ease-in-out;
   z-index: -1;
 }
 
 .worrior3 {
   position: absolute;
-  bottom: -16.7rem;
-  transform: translateX(-570%);
+  top: 24.5rem;
+  right: 15rem;
   width: 5rem;
   height: 5rem;
   background: url(assets/worrior3.png) no-repeat center center / contain;
@@ -157,31 +140,12 @@ body {
   z-index: -3;
 }
 
-.content-container {
-  height: 45vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 6rem;
-}
-
 .title {
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-top: 16.8rem;
+  margin-left: 55rem;
+  text-wrap: nowrap;
   font-size: xx-large;
-  color: #7e9add;
-}
-
-.worrior-img {
-  width: 10rem;
-}
-
-.home-btn:hover {
-  background-color: #7e9add;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
 }
 
 .bg {
