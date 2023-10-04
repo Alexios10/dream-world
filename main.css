@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  transition: all 3s ease-in-out;
+  transition: all 2s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,15 @@ body {
   margin-top: -9rem;
 }
 
-/* Water planet */
+.main-title {
+  text-transform: uppercase;
+  margin-top: 10rem;
+  margin-left: 46rem;
+  text-wrap: nowrap;
+  font-size: large;
+}
+
+/* Star planet */
 /**********************************************/
 .star-planet-container {
   position: relative;
@@ -31,18 +39,18 @@ body {
   box-shadow: 0 0 10px 10px rgb(63, 172, 255);
 }
 
-.star-planet-container:hover .worrior1 {
-  transform: translate(135%, -460%);
+.star-planet-container:hover .robot-icon {
+  transform: translate(165%, -460%);
   transition: transform 0.3s ease-in-out;
   z-index: -1;
 }
 
-.worrior1 {
+.robot-icon {
   position: absolute;
   top: 28.5rem;
-  width: 5rem;
+  width: 4rem;
   height: 5rem;
-  background: url(assets/worrior1.png) no-repeat center center / contain;
+  background: url(/assets/robot.png) no-repeat center center / contain;
   transition: transform 0.3s ease-in-out;
   z-index: -3;
 }
@@ -66,70 +74,21 @@ body {
   box-shadow: 0 0 10px 10px rgb(166, 153, 171);
 }
 
-.snow-planet-container:hover .worrior2 {
-  transform: translate(-400%, -200%);
+.snow-planet-container:hover .troll-icon {
+  transform: translate(-160%, -150%);
   transition: transform 0.3s ease-in-out;
   z-index: -1;
 }
 
-.worrior2 {
+.troll-icon {
   position: absolute;
   bottom: -10rem;
   left: 14.5rem;
   width: 5rem;
-  height: 5rem;
-  background: url(assets/worrior2.png) no-repeat center center / contain;
+  height: 9rem;
+  background: url(assets/troll.png) no-repeat center center / contain;
   transition: transform 0.3s ease-in-out;
   z-index: -3;
-}
-
-/* Water planet */
-/**********************************************/
-.water-planet-container {
-  position: relative;
-  width: 7rem;
-  margin-top: -20rem;
-  margin-left: 100rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-#water-planet {
-  width: 9rem;
-  animation: rotatePlanet 24s linear infinite;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50%;
-}
-
-#water-planet:hover {
-  box-shadow: 0 0 15px 15px rgb(33, 35, 155);
-}
-
-.water-planet-container:hover .worrior3 {
-  transform: translate(150%, -370%);
-  transition: transform 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.worrior3 {
-  position: absolute;
-  top: 24.5rem;
-  right: 15rem;
-  width: 5rem;
-  height: 5rem;
-  background: url(assets/worrior3.png) no-repeat center center / contain;
-  transition: transform 0.3s ease-in-out;
-  z-index: -3;
-}
-/**********************************************/
-
-.main-title {
-  text-transform: uppercase;
-  margin-top: 16.8rem;
-  margin-left: 55rem;
-  text-wrap: nowrap;
-  font-size: xx-large;
 }
 
 .star-planet-name,
